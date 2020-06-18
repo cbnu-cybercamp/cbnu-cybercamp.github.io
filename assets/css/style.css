@@ -125,7 +125,7 @@ body {
 .block-width-half { width: 150px; }
 
 .block-keep-ratio-1-1:after {	padding-top: 100%; }
-.block-keep-ratio-2-1:after {	padding-top: 10%; }
+.block-keep-ratio-2-1:after {	padding-top: 50%; }
 
 .flexbox-center {
 	display: -webkit-box;
