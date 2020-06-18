@@ -189,10 +189,6 @@ body {
 }
 .banner-main-home {
 	background-color: white;
-	background-image: url(../images/aaa.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
 	border-top: 7px solid #10a5cd;
 	min-height: 320px;	
 	overflow-y: auto;
