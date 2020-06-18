@@ -1,11 +1,7 @@
 # Configurations
 markdown: kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
-highlighter: rouge
-
-kramdown:
-  math_engine : mathjax
-  syntax_highlighter : rouge
+highlighter: pygments
 
 # Needed for backward compatibility
 gems: [jekyll-paginate]
@@ -14,9 +10,9 @@ gems: [jekyll-paginate]
 permalink:        /blog/:year/:month/:day/:title
 
 # Setup
-title:            'CyberCamp'
-tagline:          'CyberCamp'
-description:      'CyberCamp'
+title:            'Jekyll Metro'
+tagline:          'A Metro theme for Jekyll'
+description:      'A Sample blog using Jekyll Metro'
 url:              'http://192.168.1.11:4000'
 baseurl:          ''
 
@@ -42,16 +38,16 @@ author:         'Abdel Raoof Olakara'
 #Social Media links (Use complete URL except for email)
 dribbble:
 email:
-facebook:       
+facebook:       'https://www.facebook.com/olakara'
 flickr:
-github:         
-gplus:          
+github:         'https://github.com/olakara'
+gplus:          'https://plus.google.com/100425464897246255887/'
 instagram:
 pinterest:
-linkedin:       
+linkedin:       'https://ae.linkedin.com/in/olakara/'
 rss:
-stackoverflow:  
-twitter:        
+stackoverflow:  'http://stackoverflow.com/users/185655/abdel-raoof'
+twitter:        'https://twitter.com/olakara'
 
 # Google Analytics
 gahandler: 'UA-52149651-1'
