@@ -4,8 +4,8 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 highlighter: rouge
 
 kramdown:
-  suntax_highlighter_opts:
-    disable : true
+  math_engine : mathjax
+  syntax_highlighter : rouge
 
 # Needed for backward compatibility
 gems: [jekyll-paginate]
