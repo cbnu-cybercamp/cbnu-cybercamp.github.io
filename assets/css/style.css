@@ -84,6 +84,7 @@ body {
 .main-menu {
 	float: left;
 	width: 100%;
+	height: 100%;
 }
 .main-menu-link {
 	color: #fff;
