@@ -3,6 +3,10 @@ markdown: kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 highlighter: rouge
 
+kramdown:
+  suntax_highlighter_opts:
+    disable : true
+
 # Needed for backward compatibility
 gems: [jekyll-paginate]
 
