@@ -191,7 +191,7 @@ body {
 	background-color: white;
 	background-image: url(../images/aaa.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto;
 	background-position: bottom right;
 	border-top: 7px solid #10a5cd;
 	min-height: 320px;	
