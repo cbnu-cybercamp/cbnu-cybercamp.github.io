@@ -76,7 +76,7 @@ body {
 .gallery-page .main-navigation,
 .contact-page .main-navigation {
 	position: static;
-	float: left;
+	float: right;
 	width: 340px;
 	padding-right: 30px;
 }
