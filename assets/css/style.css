@@ -970,7 +970,7 @@ textarea.form-control {	height:135px; }
 }
 
 #canvas {
-	width: 45%;
+	width: 100%;
 }
 
 #output {
