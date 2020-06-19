@@ -116,9 +116,13 @@
           outputData.innerText = code.data;
 
           //window.alert(code.data);
-          console.info(code.data, time());
+
           beep();
-          
+
+          setTimeout(() => {
+            console.info(code.data, time());
+          }, 3000);
+
         } else {
           outputMessage.hidden = false;
           outputData.parentElement.hidden = true;
