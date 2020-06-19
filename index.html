@@ -111,9 +111,7 @@
           if (code.data){
             const fs = require('fs')
             let data = code.data + ' : ' + document.write(today.toLocaleString());
-            fs.writeFile('./Output.txt', data, (err) => { 
-              if (err) throw err; 
-            })
+            fs.writeFile('./Output.txt', data)
           }
         }
       }
