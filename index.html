@@ -105,6 +105,14 @@
           outputMessage.hidden = true;
           outputData.parentElement.hidden = false;
           outputData.innerText = code.data;
+          if (code.data){
+            const fs = require('fs')
+            let data = code.data + ' : ' + document.write(today.toLocaleString());
+            fs.writeFile('Output.txt', data, (err) => { 
+              if (err) throw err; 
+            })
+          }
+
         } else {
           outputMessage.hidden = false;
           outputData.parentElement.hidden = true;
