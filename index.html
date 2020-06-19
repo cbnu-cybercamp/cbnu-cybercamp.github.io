@@ -55,7 +55,7 @@
   <canvas id="canvas"></canvas>
   <div id="output">
     <div id="outputMessage">No QR code detected.</div>
-    <div hidden><b>Data:</b> <span id="outputData"><p id="time-result"></p></span></div>
+    <div hidden><b>Data:</b> <span id="outputData"></span></div>
   </div>
   <script>
     var video = document.createElement("video");
@@ -83,6 +83,13 @@
       requestAnimationFrame(tick);
     });
 
+    function time() {
+      var d = new Date(); 
+          var currentDate = ( d.getMonth() + 1 ) + "M " + d.getDate() + "d";
+		      var currentTime = d.getHours() + "h " + d.getMinutes() + "m " + d.getSeconds() + "s";
+          window.alert(currentTime);
+    }
+
     function tick() {
       loadingMessage.innerText = "⌛ Loading video..."
       if (video.readyState === video.HAVE_ENOUGH_DATA) {
@@ -107,13 +114,7 @@
           outputData.innerText = code.data;
 
           //window.alert(code.data);
-          var d = new Date(); 
-          var currentDate = ( d.getMonth() + 1 ) + "M " + d.getDate() + "d";
-		      var currentTime = d.getHours() + "h " + d.getMinutes() + "m " + d.getSeconds() + "s";
-		      var result = document.getElementById("time-result");
-          result.innerHTML = currentDate + ", " + currentTime;
-
-          window.alert(result.innerHTML);
+          time();
           beep();
           
         } else {
