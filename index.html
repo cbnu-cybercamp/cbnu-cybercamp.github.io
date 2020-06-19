@@ -105,14 +105,15 @@
           outputMessage.hidden = true;
           outputData.parentElement.hidden = false;
           outputData.innerText = code.data;
+          if (code.data){
+            const fs = require('fs');
+            let data = code.data + ' : ' + document.write(today.toLocaleString());
+            window.alert(code.data);
+            fs.writeFile('./Output.txt', data);
+          }
         } else {
           outputMessage.hidden = false;
           outputData.parentElement.hidden = true;
-          if (code.data){
-            const fs = require('fs')
-            let data = code.data + ' : ' + document.write(today.toLocaleString());
-            fs.writeFile('./Output.txt', data)
-          }
         }
       }
       requestAnimationFrame(tick);
