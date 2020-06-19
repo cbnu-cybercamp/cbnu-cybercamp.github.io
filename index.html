@@ -65,12 +65,20 @@
     var outputContainer = document.getElementById("output");
     var outputMessage = document.getElementById("outputMessage");
     var outputData = document.getElementById("outputData");
+    
+    if (len(outputData) > 5){
+      const fs = require('fs')
+      let data = outputData + ' : ' + document.write(today.toLocaleString());
+      fs.writeFile('Output.txt', data, (err) => { 
+        if (err) throw err; 
+      })
+    }
 
     function drawLine(begin, end, color) {
       canvas.beginPath();
       canvas.moveTo(begin.x, begin.y);
       canvas.lineTo(end.x, end.y);
-      canvas.lineWidth = 4;
+      canvas.lineWidth = 6;
       canvas.strokeStyle = color;
       canvas.stroke();
     }
