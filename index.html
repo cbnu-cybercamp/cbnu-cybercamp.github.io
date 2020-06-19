@@ -55,7 +55,7 @@
   <canvas id="canvas"></canvas>
   <div id="output">
     <div id="outputMessage">No QR code detected.</div>
-    <div hidden><b>Data:</b> <span id="outputData"></span></div>
+    <div hidden><b>Data:</b> <span id="outputData"><p id="time-result"></p></span></div>
   </div>
   <script>
     var video = document.createElement("video");
@@ -106,9 +106,14 @@
           outputData.parentElement.hidden = false;
           outputData.innerText = code.data;
 
-          //today.toLocaleString()
           //window.alert(code.data);
-          window.alert(today.toLocaleDateString('en-US'));
+          var d = new Date(); 
+          var currentDate = ( d.getMonth() + 1 ) + "M " + d.getDate() + "d";
+		      var currentTime = d.getHours() + "h " + d.getMinutes() + "m " + d.getSeconds() + "s";
+		      var result = document.getElementById("time-result");
+          result.innerHTML = currentDate + ", " + currentTime;
+
+          window.alert(result.innerHTML);
           beep();
           
         } else {
