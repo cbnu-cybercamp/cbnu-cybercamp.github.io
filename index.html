@@ -87,7 +87,9 @@
       var d = new Date(); 
       var currentDate = ( d.getMonth() + 1 ) + "/" + d.getDate() + "_";
 		  var currentTime = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
-      window.alert(currentDate + currentTime);
+      var logs = currentDate + currentTime;
+      //window.alert(currentDate + currentTime);
+      return logs;
     }
 
     function tick() {
@@ -114,7 +116,7 @@
           outputData.innerText = code.data;
 
           //window.alert(code.data);
-          time();
+          console.info(code.data, time());
           beep();
           
         } else {
