@@ -106,7 +106,7 @@
         var code = jsQR(imageData.data, imageData.width, imageData.height, {
           inversionAttempts: "dontInvert",
         });
-        if (code != '') {
+        if (code) {
           drawLine(code.location.topLeftCorner, code.location.topRightCorner, "#FF3B58");
           drawLine(code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
           drawLine(code.location.bottomRightCorner, code.location.bottomLeftCorner, "#FF3B58");
@@ -115,13 +115,13 @@
           outputData.parentElement.hidden = false;
           outputData.innerText = code.data;
 
-          //window.alert(code.data);
+          if (code.data != "") {
+            beep();
 
-          beep();
-
-          setTimeout(() => {
-            console.info(code.data, time());
-          }, 5000);
+            setTimeout(() => {
+              console.info(code.data, time());
+            }, 5000);
+          }
 
         } else {
           outputMessage.hidden = false;
