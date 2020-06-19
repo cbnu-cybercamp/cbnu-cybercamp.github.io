@@ -55,7 +55,7 @@
   <canvas id="canvas"></canvas>
   <div id="output">
     <div id="outputMessage">No QR code detected.</div>
-    <div><b>Data:</b> <span id="outputData"></span></div>
+    <div hidden><b>Data:</b> <span id="outputData"></span></div>
   </div>
   <script>
     var video = document.createElement("video");
@@ -65,14 +65,6 @@
     var outputContainer = document.getElementById("output");
     var outputMessage = document.getElementById("outputMessage");
     var outputData = document.getElementById("outputData");
-    
-    if (len(outputData) > 5){
-      const fs = require('fs')
-      let data = outputData + ' : ' + document.write(today.toLocaleString());
-      fs.writeFile('Output.txt', data, (err) => { 
-        if (err) throw err; 
-      })
-    }
 
     function drawLine(begin, end, color) {
       canvas.beginPath();
