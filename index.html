@@ -114,12 +114,12 @@
           outputMessage.hidden = true;
           outputData.parentElement.hidden = false;
           outputData.innerText = code.data;
-
+          
           if (code.data != "") {
-            setTimeout(() => {
-              beep();
-              console.error(code.data, time());
-            }, 5000);
+          //  setTimeout(() => {
+            beep();
+            console.error(code.data, time());
+           // }, 5000);
           }
 
         } else {
