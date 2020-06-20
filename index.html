@@ -116,11 +116,10 @@
           outputData.innerText = code.data;
 
           if (code.data != "") {
-            beep();
-
             setTimeout(() => {
+              beep();
               console.error(code.data, time());
-            }, 2000);
+            }, 5000);
           }
 
         } else {
