@@ -6576,8 +6576,8 @@ button.close {
 }
 
 #canvas {
-  width: 100%;
-  height: 400px;
+  width: 50%;
+  height: 100%;
 }
 
 #output {
