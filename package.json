@@ -1,13 +1,9 @@
 {
-  "name": "new-age",
-  "title": "New Age",
-  "version": "3.3.7",
-  "homepage": "http://startbootstrap.com/template-overviews/new-age",
-  "author": "Start Bootstrap",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
-  },
+  "name": "CBNU-보안경제연구소",
+  "title": "CBNU-보안경제연구소",
+  "version": "1.0.0",
+  "homepage": "",
+  "author": "",
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
@@ -18,11 +14,11 @@
     "gulp-less": "^3.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.4",
-    "jquery": "^1.11.3"
+    "jquery": "^3.5.0"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-new-age.git"
+    "type": "",
+    "url": ""
   },
   "dependencies": {
     "simple-line-icons": "^2.3.2"
