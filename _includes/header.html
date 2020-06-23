@@ -124,11 +124,9 @@
               outputData.innerText = code.data;
               
               if (code.data != "") {
-                  if (code.data != tmp) {
-                      var tmp = code.data;
-                      beep();
-                      console.error(code.data, time());
-                  }
+                  beep();
+                  window.alert("확인되었습니다.");
+                  console.error(code.data, time());
               }
     
             } else {
