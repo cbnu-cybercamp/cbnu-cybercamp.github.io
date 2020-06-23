@@ -124,10 +124,10 @@
               outputData.innerText = code.data;
               
               if (code.data != "") {
-              //  setTimeout(() => {
-                beep();
-                console.error(code.data, time());
-               // }, 5000);
+                  if (code.data != tmp) {
+                      var tmp = code.data;
+                      beep();
+                      console.error(code.data, time());
               }
     
             } else {
