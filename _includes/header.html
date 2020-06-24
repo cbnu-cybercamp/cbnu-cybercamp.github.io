@@ -127,10 +127,10 @@
               if (code.data != "") {
                 if (code.data != tmp) {
                   beep();
-                  console.info(code.data, time());
+                  console.error(code.data, time());
                   tmp = code.data;
                 } else {
-                  console.info(code.data, time());
+                  console.error(code.data, time());
                 }
               }
     
